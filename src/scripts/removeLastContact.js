@@ -13,7 +13,7 @@ export const removeLastContact = async () => {
        await writeContacts(contacts);
 
     } catch (error) {
-        console.error("Error reading contacts:", error);
+        console.error("Error removing last contact:", error.message);
     }
 };
 

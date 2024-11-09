@@ -6,7 +6,7 @@ export const countContacts = async () => {
         return contacts.length;
         
     } catch (error) {
-        console.error("Error reading contacts:", error);
+        console.error("Error reading contacts:", error.message);
     }
 };
 

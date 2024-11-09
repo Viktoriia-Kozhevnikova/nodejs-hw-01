@@ -8,7 +8,7 @@ export const getAllContacts = async () => {
         return contacts;
         
     } catch (error) {
-        console.error("Error reading contacts:", error);
+        console.error("Error reading contacts:", error.message);
     }
     
 };

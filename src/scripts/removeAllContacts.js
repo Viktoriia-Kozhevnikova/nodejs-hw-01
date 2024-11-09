@@ -10,7 +10,7 @@ export const removeAllContacts = async () => {
         await writeContacts(contacts);
 
     } catch (error) {
-        console.error("Error reading contacts:", error);
+        console.error("Error removing all contacts:", error.message);
     }
 };
 
